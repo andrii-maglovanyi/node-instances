@@ -1,0 +1,34 @@
+{
+  "name": "node-instances",
+  "version": "0.1.0",
+  "description": "Node instances communication via Redis instance",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha $(find tests -path '*.test.js')",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- tests/**/*.test.js"
+  },
+  "engines": {
+    "node": "5.8.0"
+  },
+  "dependencies": {
+    "crypto": "0.0.3",
+    "q": "^1.4.1",
+    "redis": "2.5.3",
+    "redlock": "^1.0.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "async": "^1.5.2",
+    "chai": "^3.5.0",
+    "fakeredis": "^1.0.2",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "author": "Andrii Maglovanyi",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
